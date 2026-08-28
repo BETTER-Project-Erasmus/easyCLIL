@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solve a problem - easyCLIL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <img src="IMG/Logo_medium.png" alt="easyCLIL logo" class="logo-left">
+  <div class="header-title">
+    <h1>easyCLIL</h1>
+    <p>CLIL is easy!</p>
+  </div>
+  <img src="IMG/logoBETTER.png" alt="BETTER project logo" class="logo-right">
+</header>
+
+<nav class="side-nav">
+  <a href="#" id="scroll-up-btn" class="side-btn" onclick="scrollToTop(); return false;">
+    <img src="IMG/btn-up.svg" alt="Back to top">
+  </a>
+  <a href="index.html" class="side-btn">
+    <img src="IMG/btn-home.svg" alt="Back to home">
+  </a>
+  <a href="#" id="scroll-down-btn" class="side-btn" onclick="scrollToBottom(); return false;">
+    <img src="IMG/btn-down.svg" alt="Go to bottom">
+  </a>
+</nav>
+
+<div class="container">
+
+  <h2 class="form-title">Solve a problem</h2>
+
+  <div class="form-section">
+    <label>Presentation text</label>
+    <section class="presentation">
+      At the start of the lesson, the teacher presents a problem to the pupils, who must solve it. At the end of the lesson, the pupils must explain their solution whilst the teacher helps them to improve their language skills.
+    </section>
+  </div>
+
+  <div class="form-section">
+    <label>Presentation</label>
+	<section class="presentation-fields">
+
+    <label>What is the title of the lesson</label>
+    <textarea rows="1"></textarea>
+
+    <label>Final project, final task</label>
+    <input type="text" id="project-input" name="project" placeholder="Describe the final project">
+
+    <label>Aim of the lesson</label>
+    <textarea rows="3"></textarea>
+	</section>
+  </div>
+
+  <div class="form-section">
+    <label>Plan</label>
+
+    <details class="step-block">
+      <summary>Step 1</summary>
+      <div class="step-content">
+        <label>Presentation of the problem</label>
+        <textarea></textarea>
+
+        <label>Name of the activity</label>
+        <textarea rows="1"></textarea>
+
+        <div class="activity-block">
+          <label>Activity of the teacher</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="teacher-activity-1" value="explain_full_exercise_foreign_language"> Explain the full exercise in foreign language</label>
+            <label><input type="checkbox" name="teacher-activity-1" value="make_an_example"> Make an example</label>
+            <label><input type="checkbox" name="teacher-activity-1" value="show_video_or_picture"> Show a video or a picture</label>
+          </div>
+        </div>
+
+        <div class="activity-block">
+          <label>Activity of the students</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="student-activity-1" value="listen_only"> Listen only</label>
+            <label><input type="checkbox" name="student-activity-1" value="try_briefly"> Try briefly</label>
+            <label><input type="checkbox" name="student-activity-1" value="answer_the_question"> Answer the question</label>
+            <label><input type="checkbox" name="student-activity-1" value="memorise_new_content"> Memorise new content</label>
+          </div>
+        </div>
+
+        <label for="strategies-1">Select the main strategy</label>
+        <select id="strategies-1" name="strategies-1">
+            <option value="">-- strategies --</option>
+            <option value="team_work">team work</option>
+            <option value="warm_up">warm up</option>
+            <option value="full_class_work">full class work</option>
+            <option value="work_alone">work alone</option>
+            <option value="other">other</option>
+        </select>
+      </div>
+    </details>
+
+    <details class="step-block">
+      <summary>Step 2</summary>
+      <div class="step-content">
+        <label>Presentation of the problem</label>
+        <textarea></textarea>
+
+        <label>Name of the activity</label>
+        <textarea rows="1"></textarea>
+
+        <div class="activity-block">
+          <label>Activity of the teacher</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="teacher-activity-2" value="explain_full_exercise_foreign_language"> Explain the full exercise in foreign language</label>
+            <label><input type="checkbox" name="teacher-activity-2" value="make_an_example"> Make an example</label>
+            <label><input type="checkbox" name="teacher-activity-2" value="show_video_or_picture"> Show a video or a picture</label>
+          </div>
+        </div>
+
+        <div class="activity-block">
+          <label>Activity of the students</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="student-activity-2" value="listen_only"> Listen only</label>
+            <label><input type="checkbox" name="student-activity-2" value="try_briefly"> Try briefly</label>
+            <label><input type="checkbox" name="student-activity-2" value="answer_the_question"> Answer the question</label>
+            <label><input type="checkbox" name="student-activity-2" value="memorise_new_content"> Memorise new content</label>
+          </div>
+        </div>
+
+        <label for="strategies-2">Select the main strategy</label>
+        <select id="strategies-2" name="strategies-2">
+            <option value="">-- strategies --</option>
+            <option value="team_work">team work</option>
+            <option value="warm_up">warm up</option>
+            <option value="full_class_work">full class work</option>
+            <option value="work_alone">work alone</option>
+            <option value="other">other</option>
+        </select>
+      </div>
+    </details>
+
+    <details class="step-block">
+      <summary>Step 3</summary>
+      <div class="step-content">
+        <label>Presentation of the problem</label>
+        <textarea></textarea>
+
+        <label>Name of the activity</label>
+        <textarea rows="1"></textarea>
+
+        <div class="activity-block">
+          <label>Activity of the teacher</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="teacher-activity-3" value="explain_full_exercise_foreign_language"> Explain the full exercise in foreign language</label>
+            <label><input type="checkbox" name="teacher-activity-3" value="make_an_example"> Make an example</label>
+            <label><input type="checkbox" name="teacher-activity-3" value="show_video_or_picture"> Show a video or a picture</label>
+          </div>
+        </div>
+
+        <div class="activity-block">
+          <label>Activity of the students</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="student-activity-3" value="listen_only"> Listen only</label>
+            <label><input type="checkbox" name="student-activity-3" value="try_briefly"> Try briefly</label>
+            <label><input type="checkbox" name="student-activity-3" value="answer_the_question"> Answer the question</label>
+            <label><input type="checkbox" name="student-activity-3" value="memorise_new_content"> Memorise new content</label>
+          </div>
+        </div>
+
+        <label for="strategies-3">Select the main strategy</label>
+        <select id="strategies-3" name="strategies-3">
+            <option value="">-- strategies --</option>
+            <option value="team_work">team work</option>
+            <option value="warm_up">warm up</option>
+            <option value="full_class_work">full class work</option>
+            <option value="work_alone">work alone</option>
+            <option value="other">other</option>
+        </select>
+      </div>
+    </details>
+
+  </div>
+
+  <div class="form-section">
+    <label>Pictures or videos</label>
+    <input type="url" name="media-link-1" placeholder="Link 1">
+    <input type="url" name="media-link-2" placeholder="Link 2">
+    <input type="url" name="media-link-3" placeholder="Link 3">
+  </div>
+
+  <div class="form-section">
+    <label>Website links</label>
+    <input type="url" name="website-link-1" placeholder="Link 1">
+    <input type="url" name="website-link-2" placeholder="Link 2">
+  </div>
+  
+  <button class="export-btn" onclick="exportDocx()">Export to DOCX</button>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.5.0/docx.min.js"></script>
+<script src="nav.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step by step - easyCLIL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <img src="IMG/Logo_medium.png" alt="easyCLIL logo" class="logo-left">
+  <div class="header-title">
+    <h1>easyCLIL</h1>
+    <p>CLIL is easy!</p>
+  </div>
+  <img src="IMG/logoBETTER.png" alt="BETTER project logo" class="logo-right">
+</header>
+
+<nav class="side-nav">
+  <a href="#" id="scroll-up-btn" class="side-btn" onclick="scrollToTop(); return false;">
+    <img src="IMG/btn-up.svg" alt="Back to top">
+  </a>
+  <a href="index.html" class="side-btn">
+    <img src="IMG/btn-home.svg" alt="Back to home">
+  </a>
+  <a href="#" id="scroll-down-btn" class="side-btn" onclick="scrollToBottom(); return false;">
+    <img src="IMG/btn-down.svg" alt="Go to bottom">
+  </a>
+</nav>
+
+<div class="container">
+
+  <h2 class="form-title">Step by step</h2>
+
+  <div class="form-section">
+    <label>Presentation text</label>
+    <section class="presentation">
+      The teacher teachs at the same time contains in foreign language and in the school subject.
+    </section>
+  </div>
+
+  <div class="form-section">
+    <label>Presentation</label>
+	<section class="presentation-fields">
+
+    <label>What is the title of the lesson</label>
+    <textarea rows="1"></textarea>
+
+    <label>Final project, final task</label>
+    <input type="text" id="project-input" name="project" placeholder="Describe the final project">
+
+    <label>Aim of the lesson</label>
+    <textarea rows="3"></textarea>
+
+	<label for="number-select">Number of sessions</label>
+    <select id="number-select" name="number" onchange="handleSessionCountChange(this)">
+        <option value="">-- How many sessions for this topic --</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
+	</section>
+  </div>
+
+ <div class="form-section">
+    <label>Plan</label>
+
+    <details class="step-block" id="lesson-1" style="display:none;">
+      <summary>Lesson 1</summary>
+      <div class="step-content">
+        <label>Preknowledge of the subject</label>
+        <textarea></textarea>
+
+        <label>Preknowledge of the language</label>
+        <textarea></textarea>
+
+        <label>New content for the subject</label>
+        <textarea></textarea>
+
+        <label>New content for the language</label>
+        <textarea></textarea>
+
+        <label>Lesson scenario</label>
+        <input type="text" name="step_scenario-1-1" placeholder="Step 1">
+        <input type="text" name="step_scenario-1-2" placeholder="Step 2">
+        <input type="text" name="step_scenario-1-3" placeholder="Step 3">
+        <input type="text" name="step_scenario-1-4" placeholder="Step 4">
+
+        <label>Type of teacher help (scaffolding) and strategies for inclusion</label>
+        <textarea></textarea>
+
+        <label>Pictures or videos</label>
+        <input type="url" name="media-link-1-1" placeholder="Link 1">
+        <input type="url" name="media-link-1-2" placeholder="Link 2">
+        <input type="url" name="media-link-1-3" placeholder="Link 3">
+
+        <label>Website links</label>
+        <input type="url" name="website-link-1-1" placeholder="Link 1">
+        <input type="url" name="website-link-1-2" placeholder="Link 2">
+      </div>
+    </details>
+
+    <details class="step-block" id="lesson-2" style="display:none;">
+      <summary>Lesson 2</summary>
+      <div class="step-content">
+        <label>Preknowledge of the subject</label>
+        <textarea></textarea>
+
+        <label>Preknowledge of the language</label>
+        <textarea></textarea>
+
+        <label>New content for the subject</label>
+        <textarea></textarea>
+
+        <label>New content for the language</label>
+        <textarea></textarea>
+
+        <label>Lesson scenario</label>
+        <input type="text" name="step_scenario-2-1" placeholder="Step 1">
+        <input type="text" name="step_scenario-2-2" placeholder="Step 2">
+        <input type="text" name="step_scenario-2-3" placeholder="Step 3">
+        <input type="text" name="step_scenario-2-4" placeholder="Step 4">
+
+        <label>Type of teacher help (scaffolding) and strategies for inclusion</label>
+        <textarea></textarea>
+
+        <label>Pictures or videos</label>
+        <input type="url" name="media-link-2-1" placeholder="Link 1">
+        <input type="url" name="media-link-2-2" placeholder="Link 2">
+        <input type="url" name="media-link-2-3" placeholder="Link 3">
+
+        <label>Website links</label>
+        <input type="url" name="website-link-2-1" placeholder="Link 1">
+        <input type="url" name="website-link-2-2" placeholder="Link 2">
+      </div>
+    </details>
+
+    <details class="step-block" id="lesson-3" style="display:none;">
+      <summary>Lesson 3</summary>
+      <div class="step-content">
+        <label>Preknowledge of the subject</label>
+        <textarea></textarea>
+
+        <label>Preknowledge of the language</label>
+        <textarea></textarea>
+
+        <label>New content for the subject</label>
+        <textarea></textarea>
+
+        <label>New content for the language</label>
+        <textarea></textarea>
+
+        <label>Lesson scenario</label>
+        <input type="text" name="step_scenario-3-1" placeholder="Step 1">
+        <input type="text" name="step_scenario-3-2" placeholder="Step 2">
+        <input type="text" name="step_scenario-3-3" placeholder="Step 3">
+        <input type="text" name="step_scenario-3-4" placeholder="Step 4">
+
+        <label>Type of teacher help (scaffolding) and strategies for inclusion</label>
+        <textarea></textarea>
+
+        <label>Pictures or videos</label>
+        <input type="url" name="media-link-3-1" placeholder="Link 1">
+        <input type="url" name="media-link-3-2" placeholder="Link 2">
+        <input type="url" name="media-link-3-3" placeholder="Link 3">
+
+        <label>Website links</label>
+        <input type="url" name="website-link-3-1" placeholder="Link 1">
+        <input type="url" name="website-link-3-2" placeholder="Link 2">
+      </div>
+    </details>
+
+    <details class="step-block" id="lesson-4" style="display:none;">
+      <summary>Lesson 4</summary>
+      <div class="step-content">
+        <label>Preknowledge of the subject</label>
+        <textarea></textarea>
+
+        <label>Preknowledge of the language</label>
+        <textarea></textarea>
+
+        <label>New content for the subject</label>
+        <textarea></textarea>
+
+        <label>New content for the language</label>
+        <textarea></textarea>
+
+        <label>Lesson scenario</label>
+        <input type="text" name="step_scenario-4-1" placeholder="Step 1">
+        <input type="text" name="step_scenario-4-2" placeholder="Step 2">
+        <input type="text" name="step_scenario-4-3" placeholder="Step 3">
+        <input type="text" name="step_scenario-4-4" placeholder="Step 4">
+
+        <label>Type of teacher help (scaffolding) and strategies for inclusion</label>
+        <textarea></textarea>
+
+        <label>Pictures or videos</label>
+        <input type="url" name="media-link-4-1" placeholder="Link 1">
+        <input type="url" name="media-link-4-2" placeholder="Link 2">
+        <input type="url" name="media-link-4-3" placeholder="Link 3">
+
+        <label>Website links</label>
+        <input type="url" name="website-link-4-1" placeholder="Link 1">
+        <input type="url" name="website-link-4-2" placeholder="Link 2">
+      </div>
+    </details>
+
+    <details class="step-block" id="lesson-5" style="display:none;">
+      <summary>Lesson 5</summary>
+      <div class="step-content">
+        <label>Preknowledge of the subject</label>
+        <textarea></textarea>
+
+        <label>Preknowledge of the language</label>
+        <textarea></textarea>
+
+        <label>New content for the subject</label>
+        <textarea></textarea>
+
+        <label>New content for the language</label>
+        <textarea></textarea>
+
+        <label>Lesson scenario</label>
+        <input type="text" name="step_scenario-5-1" placeholder="Step 1">
+        <input type="text" name="step_scenario-5-2" placeholder="Step 2">
+        <input type="text" name="step_scenario-5-3" placeholder="Step 3">
+        <input type="text" name="step_scenario-5-4" placeholder="Step 4">
+
+        <label>Type of teacher help (scaffolding) and strategies for inclusion</label>
+        <textarea></textarea>
+
+        <label>Pictures or videos</label>
+        <input type="url" name="media-link-5-1" placeholder="Link 1">
+        <input type="url" name="media-link-5-2" placeholder="Link 2">
+        <input type="url" name="media-link-5-3" placeholder="Link 3">
+
+        <label>Website links</label>
+        <input type="url" name="website-link-5-1" placeholder="Link 1">
+        <input type="url" name="website-link-5-2" placeholder="Link 2">
+      </div>
+    </details>
+
+  </div>
+
+
+  <button class="export-btn" onclick="exportDocx()">Export to DOCX</button>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.5.0/docx.min.js"></script>
+<script src="nav.js"></script>
+<script src="sessions.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

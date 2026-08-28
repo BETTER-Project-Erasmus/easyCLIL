@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>easyCLIL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <img src="IMG/Logo_medium.png" alt="easyCLIL logo" class="logo-left">
+  <div class="header-title">
+    <h1>easyCLIL</h1>
+    <p>CLIL is easy!</p>
+  </div>
+  <img src="IMG/logoBETTER.png" alt="BETTER project logo" class="logo-right">
+</header>
+  <main class="container">
+
+    <section class="intro">
+      This application was designed by the BETTER Team, which includes teachers and trainers from Croatia, France, Italy, Romania and Spain.
+    </section>
+	
+	<section class="description">
+
+	<div class="general">
+    <label for="country-select">Country</label>
+    <select id="country-select" name="country">
+        <option value="">-- Choose a country --</option>
+        <option value="croatia">Croatia</option>
+        <option value="france">France</option>
+        <option value="italy">Italy</option>
+        <option value="romania">Romania</option>
+        <option value="spain">Spain</option>
+    </select>
+	
+	<label for="subject-select">Subject</label>
+    <select id="subject-select" name="subject">
+        <option value="">-- Choose a subject --</option>
+        <option value="literature">Literature</option>
+        <option value="maths">Maths</option>
+        <option value="PE">Physical Education</option>
+        <option value="Science">Science</option>
+        <option value="ICT">ICT</option>
+		<option value="history">History</option>
+        <option value="geography">Geography</option>
+        <option value="arts">Arts</option>
+        <option value="music">Music</option>
+    </select>
+
+    <label>Topic</label>
+    <input type="text" id="topic-input" name="topic" placeholder="Enter topic">
+
+	<label for="level-select">Level</label>
+    <select id="level-select" name="level">
+        <option value="">-- Average level of the students --</option>
+        <option value="pa1">pre-A1</option>
+        <option value="A1">A1</option>
+        <option value="A2">A2</option>
+        <option value="B1">B1</option>
+        <option value="B2">B2</option>
+		<option value="C1">C1</option>
+        <option value="C2">C2</option>
+    </select>
+
+      </div>
+    </section>
+
+    <section class="buttons">
+
+      <a href="linguistic.html" class="btn"><img src="IMG/btn-speaking.svg" alt="" class="btn-icon">Linguistic approach</a>
+      <a href="problem.html" class="btn"><img src="IMG/btn-solve.svg" alt="" class="btn-icon">Solve a problem</a>
+      <a href="step.html" class="btn"><img src="IMG/btn-stairs.svg" alt="" class="btn-icon">Step by step</a>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

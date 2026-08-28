@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Linguistic approach - easyCLIL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <img src="IMG/Logo_medium.png" alt="easyCLIL logo" class="logo-left">
+  <div class="header-title">
+    <h1>easyCLIL</h1>
+    <p>CLIL is easy!</p>
+  </div>
+  <img src="IMG/logoBETTER.png" alt="BETTER project logo" class="logo-right">
+</header>
+
+<nav class="side-nav">
+  <a href="#" id="scroll-up-btn" class="side-btn" onclick="scrollToTop(); return false;">
+    <img src="IMG/btn-up.svg" alt="Back to top">
+  </a>
+  <a href="index.html" class="side-btn">
+    <img src="IMG/btn-home.svg" alt="Back to home">
+  </a>
+  <a href="#" id="scroll-down-btn" class="side-btn" onclick="scrollToBottom(); return false;">
+    <img src="IMG/btn-down.svg" alt="Go to bottom">
+  </a>
+</nav>
+
+<div class="container">
+
+  <h2 class="form-title">Linguistic approach</h2>
+
+  <div class="form-section">
+    <label>Presentation text</label>
+    <section class="presentation">
+      Before the CLIL session, the teacher teachs the linguistic elements that will be used later. During all the CLIL session, pupils have to use these elements
+    </section>
+  </div>
+  
+    <div class="form-section">
+    <label>Presentation</label>
+	<section class="presentation-fields">
+
+    <label>What is the title of the lesson</label>
+    <textarea rows="1"></textarea>
+
+    <label>Final project, final task</label>
+    <input type="text" id="project-input" name="project" placeholder="Describe the final project">
+
+    <label>Aim of the lesson</label>
+    <textarea rows="3"></textarea>
+	</section>
+  </div>
+  
+  
+    <div class="form-section">
+    <label>Linguistic elements</label>
+	<section class="linguistic">
+
+    <label>List of the main words</label>
+    <textarea rows="2"></textarea>
+
+    <label>List of the main sentences</label>
+    <textarea rows="3"></textarea>
+	</section>
+  </div>
+  
+  <div class="form-section">
+    <label>Plan</label>
+
+    <details class="step-block">
+      <summary>Step 1 - Presentation</summary>
+      <div class="step-content">
+        <label>Resources for presentation</label>
+     <label>Pictures or videos</label>
+    <input type="url" name="media-link-1" placeholder="Link 1">
+    <input type="url" name="media-link-2" placeholder="Link 2">
+    <input type="url" name="media-link-3" placeholder="Link 3">
+ 
+    <label>Website links</label>
+    <input type="url" name="website-link-1" placeholder="Link 1">
+    <input type="url" name="website-link-2" placeholder="Link 2">
+
+      </div>
+    </details>
+	
+	    <details class="step-block">
+      <summary>Step 2 - Introduce the new elements</summary>
+      <div class="step-content">
+        <label>Linguistic approach</label>
+        <textarea></textarea>
+		
+		<label>Warm up</label>
+        <textarea></textarea>
+		
+		<label>Understand, repeat and memorize the new elements</label>
+        <textarea></textarea>
+		
+		<label>Communicate with new elements</label>
+        <textarea></textarea>
+      </div>
+    </details>
+	
+		<details class="step-block">
+      <summary>Step 3 - Use the new elements</summary>
+      <div class="step-content">
+		<label>Communicate with new elements</label>
+        <textarea></textarea>
+		
+		<label>Play with new elements</label>
+        <textarea></textarea>
+      </div>
+    </details>
+	
+		    <details class="step-block">
+      <summary>Step 4 - CLIL session</summary>
+      <div class="step-content">
+        <label>CLIL session</label>
+		
+        <label for="warm-up-4">First activity</label>
+        <select id="warm-up-4" name="warm-up-4">
+            <option value="">-- Activity --</option>
+            <option value="repeat">repeat the linguistic elements</option>
+            <option value="game">play a game</option>
+            <option value="mother_tongue">Try the activity in the mother tongue</option>
+            <option value="other">other</option>
+        </select>
+		
+		<label>The CLIL activity</label>
+        <input type="text" id="CLIL-input" name="activity" placeholder="Describe the CLIL activity">
+		
+		<div class="activity-block">
+          <label>Activity of the teacher</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="teacher-activity-1" value="explain_full_exercise_foreign_language"> Explain the full exercise in foreign language</label>
+            <label><input type="checkbox" name="teacher-activity-1" value="make_an_example"> Make an example</label>
+            <label><input type="checkbox" name="teacher-activity-1" value="show_video_or_picture"> Show a video or a picture</label>
+          </div>
+        </div>
+
+        <div class="activity-block">
+          <label>Activity of the students</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="student-activity-1" value="listen_only"> Listen only</label>
+            <label><input type="checkbox" name="student-activity-1" value="try_briefly"> Try briefly</label>
+            <label><input type="checkbox" name="student-activity-1" value="answer_the_question"> Answer the question</label>
+            <label><input type="checkbox" name="student-activity-1" value="memorise_new_content"> Memorise new content</label>
+          </div>
+        </div>
+
+        <label for="strategies-1">Select the main strategy</label>
+        <select id="strategies-1" name="strategies-1">
+            <option value="">-- strategies --</option>
+            <option value="team_work">team work</option>
+            <option value="warm_up">warm up</option>
+            <option value="full_class_work">full class work</option>
+            <option value="work_alone">work alone</option>
+            <option value="other">other</option>
+        </select>
+      </div>
+    </details>
+
+  </div>
+  
+  <button class="export-btn" onclick="exportDocx()">Export to DOCX</button>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.5.0/docx.min.js"></script>
+<script src="nav.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
