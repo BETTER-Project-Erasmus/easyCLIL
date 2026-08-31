@@ -44,6 +44,11 @@ function validateRequiredFields() {
 }
 
 async function completeWithAI(button, methodology) {
+  if (!FEATURES.aiSuggestions) {
+    comingSoon();
+    return;
+  }
+
   if (!validateRequiredFields()) {
     alert("Please fill in the fields marked with * first — they're the core of your lesson plan and should come from you before the AI builds on them.");
     return;

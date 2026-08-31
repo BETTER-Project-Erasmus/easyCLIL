@@ -1,4 +1,9 @@
 async function exportDocx() {
+  if (!FEATURES.docxExport) {
+    comingSoon();
+    return;
+  }
+
 
   const { Document, Packer, Paragraph, TextRun } = window.docx;
 
