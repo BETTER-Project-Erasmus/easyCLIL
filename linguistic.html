@@ -42,35 +42,34 @@
       Before the CLIL session, the teacher teachs the linguistic elements that will be used later. During all the CLIL session, pupils have to use these elements
     </section>
   </div>
-  
-    <div class="form-section">
+
+  <div class="form-section">
     <label>Presentation</label>
 	<section class="presentation-fields">
 
-    <label>What is the title of the lesson</label>
-    <textarea rows="1"></textarea>
+    <label>What is the title of the lesson *</label>
+    <textarea id="title-input" rows="1" required data-ai-label="Title of the lesson"></textarea>
 
-    <label>Final project, final task</label>
-    <input type="text" id="project-input" name="project" placeholder="Describe the final project">
+    <label>Final project, final task *</label>
+    <input type="text" id="project-input" name="project" placeholder="Describe the final project" required data-ai-label="Final project, final task">
 
-    <label>Aim of the lesson</label>
-    <textarea rows="3"></textarea>
+    <label>Aim of the lesson *</label>
+    <textarea id="aim-input" rows="3" required data-ai-label="Aim of the lesson"></textarea>
 	</section>
   </div>
-  
-  
-    <div class="form-section">
+
+  <div class="form-section">
     <label>Linguistic elements</label>
 	<section class="linguistic">
 
     <label>List of the main words</label>
-    <textarea rows="2"></textarea>
+    <textarea id="main-words" rows="2" data-ai-label="List of the main words"></textarea>
 
     <label>List of the main sentences</label>
-    <textarea rows="3"></textarea>
+    <textarea id="main-sentences" rows="3" data-ai-label="List of the main sentences"></textarea>
 	</section>
   </div>
-  
+
   <div class="form-section">
     <label>Plan</label>
 
@@ -78,51 +77,50 @@
       <summary>Step 1 - Presentation</summary>
       <div class="step-content">
         <label>Resources for presentation</label>
-     <label>Pictures or videos</label>
-    <input type="url" name="media-link-1" placeholder="Link 1">
-    <input type="url" name="media-link-2" placeholder="Link 2">
-    <input type="url" name="media-link-3" placeholder="Link 3">
- 
-    <label>Website links</label>
-    <input type="url" name="website-link-1" placeholder="Link 1">
-    <input type="url" name="website-link-2" placeholder="Link 2">
+        <label>Pictures or videos</label>
+        <input type="url" id="media-link-1" name="media-link-1" placeholder="Link 1" data-ai-label="Picture or video link 1" data-ai-type="url">
+        <input type="url" id="media-link-2" name="media-link-2" placeholder="Link 2" data-ai-label="Picture or video link 2" data-ai-type="url">
+        <input type="url" id="media-link-3" name="media-link-3" placeholder="Link 3" data-ai-label="Picture or video link 3" data-ai-type="url">
 
+        <label>Website links</label>
+        <input type="url" id="website-link-1" name="website-link-1" placeholder="Link 1" data-ai-label="Website link 1" data-ai-type="url">
+        <input type="url" id="website-link-2" name="website-link-2" placeholder="Link 2" data-ai-label="Website link 2" data-ai-type="url">
       </div>
     </details>
-	
-	    <details class="step-block">
+
+    <details class="step-block">
       <summary>Step 2 - Introduce the new elements</summary>
       <div class="step-content">
         <label>Linguistic approach</label>
-        <textarea></textarea>
-		
-		<label>Warm up</label>
-        <textarea></textarea>
-		
-		<label>Understand, repeat and memorize the new elements</label>
-        <textarea></textarea>
-		
-		<label>Communicate with new elements</label>
-        <textarea></textarea>
+        <textarea id="step2-linguistic-approach" data-ai-label="Linguistic approach (Step 2)"></textarea>
+
+        <label>Warm up</label>
+        <textarea id="step2-warm-up" data-ai-label="Warm up (Step 2)"></textarea>
+
+        <label>Understand, repeat and memorize the new elements</label>
+        <textarea id="step2-understand-repeat" data-ai-label="Understand, repeat and memorize the new elements (Step 2)"></textarea>
+
+        <label>Communicate with new elements</label>
+        <textarea id="step2-communicate" data-ai-label="Communicate with new elements (Step 2)"></textarea>
       </div>
     </details>
-	
-		<details class="step-block">
+
+    <details class="step-block">
       <summary>Step 3 - Use the new elements</summary>
       <div class="step-content">
-		<label>Communicate with new elements</label>
-        <textarea></textarea>
-		
-		<label>Play with new elements</label>
-        <textarea></textarea>
+        <label>Communicate with new elements</label>
+        <textarea id="step3-communicate" data-ai-label="Communicate with new elements (Step 3)"></textarea>
+
+        <label>Play with new elements</label>
+        <textarea id="step3-play" data-ai-label="Play with new elements (Step 3)"></textarea>
       </div>
     </details>
-	
-		    <details class="step-block">
+
+    <details class="step-block">
       <summary>Step 4 - CLIL session</summary>
       <div class="step-content">
         <label>CLIL session</label>
-		
+
         <label for="warm-up-4">First activity</label>
         <select id="warm-up-4" name="warm-up-4">
             <option value="">-- Activity --</option>
@@ -131,11 +129,14 @@
             <option value="mother_tongue">Try the activity in the mother tongue</option>
             <option value="other">other</option>
         </select>
-		
-		<label>The CLIL activity</label>
-        <input type="text" id="CLIL-input" name="activity" placeholder="Describe the CLIL activity">
-		
-		<div class="activity-block">
+
+        <label>The CLIL activity *</label>
+        <input type="text" id="CLIL-input" name="activity" placeholder="Describe the CLIL activity" required data-ai-label="The CLIL activity (Step 4)">
+
+        <label>Describe the activity</label>
+        <textarea id="step4-describe-activity" data-ai-label="Describe the activity (Step 4)"></textarea>
+
+        <div class="activity-block">
           <label>Activity of the teacher</label>
           <div class="checkbox-group">
             <label><input type="checkbox" name="teacher-activity-1" value="explain_full_exercise_foreign_language"> Explain the full exercise in foreign language</label>
@@ -167,13 +168,20 @@
     </details>
 
   </div>
-  
-  <button class="export-btn" onclick="exportDocx()">Export to DOCX</button>
+
+  <div class="bottom-actions">
+    <button type="button" class="ai-complete-btn" onclick="completeWithAI(this, 'Linguistic approach')">
+      <img src="IMG/btn-ai.svg" alt="" class="ai-complete-icon">Suggest with AI
+    </button>
+    <button class="export-btn" onclick="exportDocx()">Export to DOCX</button>
+  </div>
 
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.5.0/docx.min.js"></script>
 <script src="nav.js"></script>
+<script src="context.js"></script>
+<script src="ai-assist.js"></script>
 <script src="app.js"></script>
 
 </body>

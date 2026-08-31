@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="home-page">
 
 <header class="header">
   <img src="IMG/Logo_medium.png" alt="easyCLIL logo" class="logo-left">
@@ -72,13 +72,16 @@
 
     <section class="buttons">
 
-      <a href="linguistic.html" class="btn"><img src="IMG/btn-speaking.svg" alt="" class="btn-icon">Linguistic approach</a>
-      <a href="problem.html" class="btn"><img src="IMG/btn-solve.svg" alt="" class="btn-icon">Solve a problem</a>
-      <a href="step.html" class="btn"><img src="IMG/btn-stairs.svg" alt="" class="btn-icon">Step by step</a>
+      <a href="linguistic.html" class="btn" onclick="saveContextAndContinue()"><img src="IMG/btn-speaking.svg" alt="" class="btn-icon">Linguistic approach</a>
+      <a href="problem.html" class="btn" onclick="saveContextAndContinue()"><img src="IMG/btn-solve.svg" alt="" class="btn-icon">Solve a problem</a>
+      <a href="step.html" class="btn" onclick="saveContextAndContinue()"><img src="IMG/btn-stairs.svg" alt="" class="btn-icon">Step by step</a>
 
     </section>
 
+    <a href="tips.html" class="tips-link">💡 Browse all teaching tips</a>
+
   </main>
 
+<script src="context.js"></script>
 </body>
 </html>

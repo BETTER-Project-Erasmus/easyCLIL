@@ -47,14 +47,14 @@
     <label>Presentation</label>
 	<section class="presentation-fields">
 
-    <label>What is the title of the lesson</label>
-    <textarea rows="1"></textarea>
+    <label>What is the title of the lesson *</label>
+    <textarea id="title-input" rows="1" required data-ai-label="Title of the lesson"></textarea>
 
-    <label>Final project, final task</label>
-    <input type="text" id="project-input" name="project" placeholder="Describe the final project">
+    <label>Final project, final task *</label>
+    <input type="text" id="project-input" name="project" placeholder="Describe the final project" required data-ai-label="Final project, final task">
 
-    <label>Aim of the lesson</label>
-    <textarea rows="3"></textarea>
+    <label>Aim of the lesson *</label>
+    <textarea id="aim-input" rows="3" required data-ai-label="Aim of the lesson"></textarea>
 	</section>
   </div>
 
@@ -65,10 +65,10 @@
       <summary>Step 1</summary>
       <div class="step-content">
         <label>Presentation of the problem</label>
-        <textarea></textarea>
+        <textarea id="step1-presentation" data-ai-label="Presentation of the problem (Step 1)"></textarea>
 
-        <label>Name of the activity</label>
-        <textarea rows="1"></textarea>
+        <label>Name of the activity *</label>
+        <textarea id="step1-activity-name" rows="1" required data-ai-label="Name of the activity (Step 1)"></textarea>
 
         <div class="activity-block">
           <label>Activity of the teacher</label>
@@ -105,10 +105,10 @@
       <summary>Step 2</summary>
       <div class="step-content">
         <label>Presentation of the problem</label>
-        <textarea></textarea>
+        <textarea id="step2-presentation" data-ai-label="Presentation of the problem (Step 2)"></textarea>
 
-        <label>Name of the activity</label>
-        <textarea rows="1"></textarea>
+        <label>Name of the activity *</label>
+        <textarea id="step2-activity-name" rows="1" required data-ai-label="Name of the activity (Step 2)"></textarea>
 
         <div class="activity-block">
           <label>Activity of the teacher</label>
@@ -145,10 +145,10 @@
       <summary>Step 3</summary>
       <div class="step-content">
         <label>Presentation of the problem</label>
-        <textarea></textarea>
+        <textarea id="step3-presentation" data-ai-label="Presentation of the problem (Step 3)"></textarea>
 
-        <label>Name of the activity</label>
-        <textarea rows="1"></textarea>
+        <label>Name of the activity *</label>
+        <textarea id="step3-activity-name" rows="1" required data-ai-label="Name of the activity (Step 3)"></textarea>
 
         <div class="activity-block">
           <label>Activity of the teacher</label>
@@ -185,23 +185,30 @@
 
   <div class="form-section">
     <label>Pictures or videos</label>
-    <input type="url" name="media-link-1" placeholder="Link 1">
-    <input type="url" name="media-link-2" placeholder="Link 2">
-    <input type="url" name="media-link-3" placeholder="Link 3">
+    <input type="url" id="media-link-1" name="media-link-1" placeholder="Link 1" data-ai-label="Picture or video link 1" data-ai-type="url">
+    <input type="url" id="media-link-2" name="media-link-2" placeholder="Link 2" data-ai-label="Picture or video link 2" data-ai-type="url">
+    <input type="url" id="media-link-3" name="media-link-3" placeholder="Link 3" data-ai-label="Picture or video link 3" data-ai-type="url">
   </div>
 
   <div class="form-section">
     <label>Website links</label>
-    <input type="url" name="website-link-1" placeholder="Link 1">
-    <input type="url" name="website-link-2" placeholder="Link 2">
+    <input type="url" id="website-link-1" name="website-link-1" placeholder="Link 1" data-ai-label="Website link 1" data-ai-type="url">
+    <input type="url" id="website-link-2" name="website-link-2" placeholder="Link 2" data-ai-label="Website link 2" data-ai-type="url">
   </div>
-  
-  <button class="export-btn" onclick="exportDocx()">Export to DOCX</button>
+
+  <div class="bottom-actions">
+    <button type="button" class="ai-complete-btn" onclick="completeWithAI(this, 'Solve a problem')">
+      <img src="IMG/btn-ai.svg" alt="" class="ai-complete-icon">Suggest with AI
+    </button>
+    <button class="export-btn" onclick="exportDocx()">Export to DOCX</button>
+  </div>
 
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.5.0/docx.min.js"></script>
 <script src="nav.js"></script>
+<script src="context.js"></script>
+<script src="ai-assist.js"></script>
 <script src="app.js"></script>
 
 </body>

@@ -1,7 +1,7 @@
 // Handles the dynamic number of Lesson blocks on step.html (max 5),
 // based on the "Number of sessions" selector.
 
-const MAX_SESSIONS = 5;
+const MAX_SESSIONS = 7;
 
 function getLessonBlock(n) {
   return document.getElementById("lesson-" + n);
