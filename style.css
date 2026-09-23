@@ -431,3 +431,58 @@ textarea {
 .home-page .tips-link {
   margin-top: 20px;
 }
+
+/* METHODOLOGY PREVIEW DIALOG (index.html) */
+.methodology-dialog {
+  border: none;
+  border-radius: var(--radius);
+  padding: 24px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: var(--shadow-card-hover);
+  background: var(--color-surface);
+}
+
+.methodology-dialog::backdrop {
+  background: rgba(28, 43, 58, 0.6);
+}
+
+.methodology-dialog-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.dialog-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dialog-btn:hover {
+  transform: scale(1.08);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.dialog-btn-accept {
+  background: #2e9e5b;
+}
+
+.dialog-btn-reject {
+  background: #d92626;
+}
+
+#methodology-preview-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
