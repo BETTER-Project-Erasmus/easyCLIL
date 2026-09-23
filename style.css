@@ -261,7 +261,7 @@ textarea {
 }
 
 .step-block summary::before {
-  content: "▶";
+  content: "\25B6";
   display: inline-block;
   margin-right: 10px;
   color: var(--color-accent);
@@ -378,9 +378,10 @@ textarea {
 /* TIPS LINK (index.html) — intentionally NOT styled like .btn,
    so it never reads as a 4th methodology choice. */
 .tips-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   margin: 36px auto 0;
-  text-align: center;
   font-family: var(--font-body);
   font-weight: 500;
   font-size: 15px;
@@ -390,6 +391,12 @@ textarea {
   width: fit-content;
   padding-bottom: 3px;
   transition: color 0.2s, border-color 0.2s;
+}
+
+.tips-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .tips-link:hover {
@@ -437,8 +444,8 @@ textarea {
   border: none;
   border-radius: var(--radius);
   padding: 24px;
-  max-width: 600px;
-  width: 90%;
+  max-width: 900px;
+  width: 85vw;
   box-shadow: var(--shadow-card-hover);
   background: var(--color-surface);
 }
@@ -459,12 +466,18 @@ textarea {
   height: 52px;
   border-radius: 50%;
   border: none;
-  font-size: 22px;
-  font-weight: 700;
   cursor: pointer;
   color: white;
   box-shadow: var(--shadow-card);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-btn svg {
+  width: 24px;
+  height: 24px;
 }
 
 .dialog-btn:hover {
@@ -483,6 +496,8 @@ textarea {
 #methodology-preview-image {
   display: block;
   width: 100%;
+  max-height: 80vh;
   height: auto;
+  object-fit: contain;
   border-radius: 8px;
 }
