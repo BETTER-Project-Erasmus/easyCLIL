@@ -78,12 +78,25 @@
 
     </section>
 
-    <a href="tips.html" class="tips-link" onclick="tipsLinkClick(event)">ðŸ’¡ Browse all teaching tips</a>
+    <a href="tips.html" class="tips-link" onclick="tipsLinkClick(event)">
+      <svg class="tips-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M9 21h6M10 17v2h4v-2M8 14a5 5 0 1 1 8 0c-.8.9-1.5 1.7-1.5 3h-5c0-1.3-.7-2.1-1.5-3Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Browse all teaching tips
+    </a>
 
     <dialog id="methodology-preview" class="methodology-dialog">
       <div class="methodology-dialog-actions">
-        <button type="button" class="dialog-btn dialog-btn-reject" onclick="closeMethodologyPreview()" aria-label="This isn't what I wanted">âœ•</button>
-        <button type="button" class="dialog-btn dialog-btn-accept" onclick="confirmMethodologyChoice()" aria-label="Yes, this is what I wanted">âœ“</button>
+        <button type="button" class="dialog-btn dialog-btn-reject" onclick="closeMethodologyPreview()" aria-label="This isn't what I wanted">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button type="button" class="dialog-btn dialog-btn-accept" onclick="confirmMethodologyChoice()" aria-label="Yes, this is what I wanted">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M5 13l4 4L19 7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
       </div>
       <img id="methodology-preview-image" src="" alt="">
     </dialog>
