@@ -444,8 +444,8 @@ textarea {
   border: none;
   border-radius: var(--radius);
   padding: 24px;
-  max-width: 900px;
-  width: 85vw;
+  max-width: 990px;
+  width: 93.5vw;
   box-shadow: var(--shadow-card-hover);
   background: var(--color-surface);
 }
@@ -457,13 +457,13 @@ textarea {
 .methodology-dialog-actions {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 12px;
   margin-bottom: 16px;
 }
 
 .dialog-btn {
-  width: 52px;
-  height: 52px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -476,8 +476,8 @@ textarea {
 }
 
 .dialog-btn svg {
-  width: 24px;
-  height: 24px;
+  width: 12px;
+  height: 12px;
 }
 
 .dialog-btn:hover {
@@ -500,4 +500,47 @@ textarea {
   height: auto;
   object-fit: contain;
   border-radius: 8px;
+}
+
+/* METHODOLOGY CAROUSEL ARROWS (prev/next inside the preview dialog) */
+.methodology-carousel {
+  position: relative;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-card);
+  transition: background 0.2s, transform 0.15s, box-shadow 0.15s;
+}
+
+.carousel-arrow:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.carousel-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-arrow-prev {
+  left: 8px;
+}
+
+.carousel-arrow-next {
+  right: 8px;
 }
