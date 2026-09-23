@@ -72,17 +72,26 @@
 
     <section class="buttons">
 
-      <a href="linguistic.html" class="btn" onclick="saveContextAndContinue()"><img src="IMG/btn-speaking.svg" alt="" class="btn-icon">Linguistic approach</a>
-      <a href="problem.html" class="btn" onclick="saveContextAndContinue()"><img src="IMG/btn-solve.svg" alt="" class="btn-icon">Solve a problem</a>
-      <a href="step.html" class="btn" onclick="saveContextAndContinue()"><img src="IMG/btn-stairs.svg" alt="" class="btn-icon">Step by step</a>
+      <a href="linguistic.html" class="btn" onclick="openMethodologyPreview(event, 'linguistic')"><img src="IMG/btn-speaking.svg" alt="" class="btn-icon">Linguistic approach</a>
+      <a href="problem.html" class="btn" onclick="openMethodologyPreview(event, 'problem')"><img src="IMG/btn-solve.svg" alt="" class="btn-icon">Solve a problem</a>
+      <a href="step.html" class="btn" onclick="openMethodologyPreview(event, 'step')"><img src="IMG/btn-stairs.svg" alt="" class="btn-icon">Step by step</a>
 
     </section>
 
-    <a href="tips.html" class="tips-link" onclick="tipsLinkClick(event)">💡 Browse all teaching tips</a>
+    <a href="tips.html" class="tips-link" onclick="tipsLinkClick(event)">ðŸ’¡ Browse all teaching tips</a>
+
+    <dialog id="methodology-preview" class="methodology-dialog">
+      <div class="methodology-dialog-actions">
+        <button type="button" class="dialog-btn dialog-btn-reject" onclick="closeMethodologyPreview()" aria-label="This isn't what I wanted">âœ•</button>
+        <button type="button" class="dialog-btn dialog-btn-accept" onclick="confirmMethodologyChoice()" aria-label="Yes, this is what I wanted">âœ“</button>
+      </div>
+      <img id="methodology-preview-image" src="" alt="">
+    </dialog>
 
   </main>
 
 <script src="feature-flags.js"></script>
 <script src="context.js"></script>
+<script src="methodology-preview.js"></script>
 </body>
 </html>
