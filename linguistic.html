@@ -74,9 +74,12 @@
     <label>Plan</label>
 
     <details class="step-block">
-      <summary>Step 1 - Presentation</summary>
+      <summary>Step 1 - Starter</summary>
       <div class="step-content">
-        <label>Resources for presentation</label>
+        <label>First activity</label>
+        <textarea id="first-activity-starter" rows="2"></textarea>
+
+        <label>Resources for starter</label>
         <label>Pictures or videos</label>
         <input type="url" id="media-link-1" name="media-link-1" placeholder="Link 1" data-ai-label="Picture or video link 1" data-ai-type="url">
         <input type="url" id="media-link-2" name="media-link-2" placeholder="Link 2" data-ai-label="Picture or video link 2" data-ai-type="url">
@@ -91,50 +94,32 @@
     <details class="step-block">
       <summary>Step 2 - Introduce the new elements</summary>
       <div class="step-content">
-        <label>Linguistic approach</label>
-        <textarea id="step2-linguistic-approach" data-ai-label="Linguistic approach (Step 2)"></textarea>
-
         <label>Warm up</label>
         <textarea id="step2-warm-up" data-ai-label="Warm up (Step 2)"></textarea>
 
-        <label>Understand, repeat and memorize the new elements</label>
-        <textarea id="step2-understand-repeat" data-ai-label="Understand, repeat and memorize the new elements (Step 2)"></textarea>
+        <label>Activities and games to discover and memorize the new elements</label>
+        <textarea id="step2-understand-repeat" data-ai-label="Activities and games to discover and memorize the new elements (Step 2)"></textarea>
 
-        <label>Communicate with new elements</label>
-        <textarea id="step2-communicate" data-ai-label="Communicate with new elements (Step 2)"></textarea>
+        <label>Situation to communicate with the new elements</label>
+        <textarea id="step2-communicate" data-ai-label="Situation to communicate with the new elements (Step 2)"></textarea>
       </div>
     </details>
 
     <details class="step-block">
-      <summary>Step 3 - Use the new elements</summary>
+      <summary>Step 3 - Learn new content</summary>
       <div class="step-content">
-        <label>Communicate with new elements</label>
-        <textarea id="step3-communicate" data-ai-label="Communicate with new elements (Step 3)"></textarea>
-
-        <label>Play with new elements</label>
-        <textarea id="step3-play" data-ai-label="Play with new elements (Step 3)"></textarea>
+        <p class="presentation">While discovering, learning and applying new linguistic elements during language classes, students work in their subject areas to acquire foundational knowledge and skills, which then refine by using the foreing language.</p>
       </div>
     </details>
 
     <details class="step-block">
       <summary>Step 4 - CLIL session</summary>
       <div class="step-content">
-        <label>CLIL session</label>
+        <label>Warm up</label>
+        <textarea id="step4-warm-up" rows="2" data-ai-label="Warm up (Step 4 - CLIL session)"></textarea>
 
-        <label for="warm-up-4">First activity</label>
-        <select id="warm-up-4" name="warm-up-4">
-            <option value="">-- Activity --</option>
-            <option value="repeat">repeat the linguistic elements</option>
-            <option value="game">play a game</option>
-            <option value="mother_tongue">Try the activity in the mother tongue</option>
-            <option value="other">other</option>
-        </select>
-
-        <label>The CLIL activity *</label>
-        <input type="text" id="CLIL-input" name="activity" placeholder="Describe the CLIL activity" required data-ai-label="The CLIL activity (Step 4)">
-
-        <label>Describe the activity</label>
-        <textarea id="step4-describe-activity" data-ai-label="Describe the activity (Step 4)"></textarea>
+        <label>Title of the CLIL activity *</label>
+        <input type="text" id="CLIL-input" name="activity" placeholder="Describe the CLIL activity" required data-ai-label="Title of the CLIL activity (Step 4)">
 
         <div class="activity-block">
           <label>Activity of the teacher</label>

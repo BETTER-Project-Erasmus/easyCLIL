@@ -55,6 +55,12 @@
 
     <label>Aim of the lesson *</label>
     <textarea id="aim-input" rows="3" required data-ai-label="Aim of the lesson"></textarea>
+
+    <label>List of the main words</label>
+    <textarea id="main-words" rows="2" data-ai-label="List of the main words"></textarea>
+
+    <label>List of the main sentences</label>
+    <textarea id="main-sentences" rows="3" data-ai-label="List of the main sentences"></textarea>
 	</section>
   </div>
 
@@ -62,7 +68,7 @@
     <label>Plan</label>
 
     <details class="step-block">
-      <summary>Step 1</summary>
+      <summary>Step 1 - Presentation of the problem</summary>
       <div class="step-content">
         <label>Presentation of the problem</label>
         <textarea id="step1-presentation" data-ai-label="Presentation of the problem (Step 1)"></textarea>
@@ -88,27 +94,14 @@
             <label><input type="checkbox" name="student-activity-1" value="memorise_new_content"> Memorise new content</label>
           </div>
         </div>
-
-        <label for="strategies-1">Select the main strategy</label>
-        <select id="strategies-1" name="strategies-1">
-            <option value="">-- strategies --</option>
-            <option value="team_work">team work</option>
-            <option value="warm_up">warm up</option>
-            <option value="full_class_work">full class work</option>
-            <option value="work_alone">work alone</option>
-            <option value="other">other</option>
-        </select>
       </div>
     </details>
 
     <details class="step-block">
-      <summary>Step 2</summary>
+      <summary>Step 2 - Solve the problem</summary>
       <div class="step-content">
-        <label>Presentation of the problem</label>
-        <textarea id="step2-presentation" data-ai-label="Presentation of the problem (Step 2)"></textarea>
-
-        <label>Name of the activity *</label>
-        <textarea id="step2-activity-name" rows="1" required data-ai-label="Name of the activity (Step 2)"></textarea>
+        <label>Goal of the activity *</label>
+        <textarea id="step2-activity-goal" rows="2" required data-ai-label="Goal of the activity (Step 2)" placeholder="Describe what the students have to do (an experiment to carry out, a table to complete, a drawing to do, a text to write, …) to solve the problem."></textarea>
 
         <div class="activity-block">
           <label>Activity of the teacher</label>
@@ -138,34 +131,37 @@
             <option value="work_alone">work alone</option>
             <option value="other">other</option>
         </select>
+
+        <label>Type of teacher help (scaffolding) and strategies for inclusion</label>
+        <textarea id="step2-teacher-help" data-ai-label="Type of teacher help (scaffolding) and strategies for inclusion (Step 2)"></textarea>
       </div>
     </details>
 
     <details class="step-block">
-      <summary>Step 3</summary>
+      <summary>Step 3 - Explain and learn</summary>
       <div class="step-content">
-        <label>Presentation of the problem</label>
-        <textarea id="step3-presentation" data-ai-label="Presentation of the problem (Step 3)"></textarea>
-
-        <label>Name of the activity *</label>
-        <textarea id="step3-activity-name" rows="1" required data-ai-label="Name of the activity (Step 3)"></textarea>
-
-        <div class="activity-block">
-          <label>Activity of the teacher</label>
-          <div class="checkbox-group">
-            <label><input type="checkbox" name="teacher-activity-3" value="explain_full_exercise_foreign_language"> Explain the full exercise in foreign language</label>
-            <label><input type="checkbox" name="teacher-activity-3" value="make_an_example"> Make an example</label>
-            <label><input type="checkbox" name="teacher-activity-3" value="show_video_or_picture"> Show a video or a picture</label>
-          </div>
-        </div>
+        <label>Presentation of the work carried out</label>
+        <textarea id="step3-work-presentation" data-ai-label="Presentation of the work carried out (Step 3)" placeholder="Explain how the pupils will present what they have done (poster, exhibition, oral presentation, etc.)"></textarea>
 
         <div class="activity-block">
           <label>Activity of the students</label>
           <div class="checkbox-group">
-            <label><input type="checkbox" name="student-activity-3" value="listen_only"> Listen only</label>
-            <label><input type="checkbox" name="student-activity-3" value="try_briefly"> Try briefly</label>
-            <label><input type="checkbox" name="student-activity-3" value="answer_the_question"> Answer the question</label>
-            <label><input type="checkbox" name="student-activity-3" value="memorise_new_content"> Memorise new content</label>
+            <label><input type="checkbox" name="student-activity-3" value="present_orally"> Present their work orally</label>
+            <label><input type="checkbox" name="student-activity-3" value="give_an_example"> Give an example</label>
+            <label><input type="checkbox" name="student-activity-3" value="draw_picture_or_diagram"> Draw a picture or a diagram on the board</label>
+            <label><input type="checkbox" name="student-activity-3" value="demonstrate_approach"> Demonstrate their approach to the whole class</label>
+            <label><input type="checkbox" name="student-activity-3" value="explain_their_work"> Explain their work</label>
+          </div>
+        </div>
+
+        <div class="activity-block">
+          <label>Strategies of the teacher</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="teacher-activity-3" value="repeat_and_correct"> Repeat and correct the presentation of the students</label>
+            <label><input type="checkbox" name="teacher-activity-3" value="ask_the_students"> Ask the students</label>
+            <label><input type="checkbox" name="teacher-activity-3" value="teach_new_words_sentences"> Teach new words and/or new sentences</label>
+            <label><input type="checkbox" name="teacher-activity-3" value="show_video_picture_poster"> Show a video, a picture, a poster to help students</label>
+            <label><input type="checkbox" name="teacher-activity-3" value="write_main_info_on_board"> Write the main information on the board</label>
           </div>
         </div>
 
@@ -181,19 +177,13 @@
       </div>
     </details>
 
-  </div>
+    <details class="step-block">
+      <summary>Step 4 - Validation of the new knowledge</summary>
+      <div class="step-content">
+        <p class="presentation">The teacher prepares an explanation using flashcards, a poster or a text to introduce the new content. The aim is to devote time to teaching the linguistic elements and knowledge and concepts related to the topic.</p>
+      </div>
+    </details>
 
-  <div class="form-section">
-    <label>Pictures or videos</label>
-    <input type="url" id="media-link-1" name="media-link-1" placeholder="Link 1" data-ai-label="Picture or video link 1" data-ai-type="url">
-    <input type="url" id="media-link-2" name="media-link-2" placeholder="Link 2" data-ai-label="Picture or video link 2" data-ai-type="url">
-    <input type="url" id="media-link-3" name="media-link-3" placeholder="Link 3" data-ai-label="Picture or video link 3" data-ai-type="url">
-  </div>
-
-  <div class="form-section">
-    <label>Website links</label>
-    <input type="url" id="website-link-1" name="website-link-1" placeholder="Link 1" data-ai-label="Website link 1" data-ai-type="url">
-    <input type="url" id="website-link-2" name="website-link-2" placeholder="Link 2" data-ai-label="Website link 2" data-ai-type="url">
   </div>
 
   <div class="bottom-actions">
